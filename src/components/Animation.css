@@ -1,0 +1,44 @@
+/*Animation bounce effect*/
+  /*Portrait*/
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+/* Animation typewriter effect */
+.anim-typewriter{
+  animation: typewriter 3s steps(35) 0.6s 1 normal both,
+             blinkTextCursor 500ms steps(44, end) 10 normal;
+}
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+  
+@keyframes blinkTextCursor{
+  from{border-right-color: #5d0092;}
+  to{border-right-color: #fff;}
+}
+
+/*Animation flying*/
+@keyframes fly {
+  16.6% { transform: translate(50px, -60px) rotate(-60deg); }
+  33.33% { transform: translate(50px, -100px) rotate(-120deg); }
+  49.8% { transform: translate(0, -120px) rotate(-180deg); }
+  66.4% { transform: translate(-50px, -100px) rotate(-240deg); }
+  83% { transform: translate(-50px, -50px) rotate(-300deg); }
+  100% { transform: translate(0, 0) rotate(-360deg); }
+}
