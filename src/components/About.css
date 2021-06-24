@@ -1,5 +1,13 @@
+p{
+    padding-top: 1rem;
+}
+
+#padding-top {
+    padding-top: 3rem;
+}
+
 .about-container {
-    background-color: black;
+    background-color: #121212;
     line-height: 1.5;
 }
 
@@ -9,43 +17,67 @@
     grid-template-rows: auto;
     grid-template-areas:
     "portrait about-text"
+    "skills1 skills1"
 }
 
 .portrait {
     grid-area: portrait;
-    margin-left: 50vh;
+    margin-left: 10vw;
+    margin-right: 5vw;
     margin-top: 20vh;
-    margin-bottom: 20vh;
-    margin-right: 3rem;
+    background-image: url(/src/image/IMG_6478.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
 }
 
-.portrait > img{
-    max-width: 15vw;
-    height: auto;
-    object-fit: cover;
-}
 
 .about-text {
     grid-area: about-text;
     margin-top: 20vh;
-    margin-left: 3rem;
-    margin-right: 25vh;
-    margin-bottom: 20vh;
+    margin-right: 20vw;
+    margin-bottom: 5vh;
     justify-content: left;
     align-items: left;
     color: white;
 
 }
 
+.skills1{grid-area: skills1;}
+
+.skills1 {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 10vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills1 img {
+    width: 60vw;
+}
+
+.skills1 h2 {
+    padding-bottom: 3rem;
+}
+
 .email-containter {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .far {
     padding-right: 5px;
+    padding-top: 5px;
     color: #00C9FF;
-    color: -webkit-linear-gradient(to right, #92FE9D, #00C9FF); 
-    color: linear-gradient(to right, #92FE9D, #00C9FF); 
+    color: #03dac5;
 
 }
 
@@ -61,42 +93,62 @@
   @media screen and (max-width: 900px) {
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
-        "portrait"
-        "about-text";
+        "about-text about-text"
+        "portrait portrait"
+        "skills2 skills2"
     }
 
-    .portrait {
-        grid-area: portrait;
-        margin-left: 0;
-        margin-top: 20vh;
-        margin-bottom: 0;
-        margin-right: 0;
-    }
-    
-    .portrait > img{
-        max-width: 25vw;
-        height: auto;
-        position: absolute;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    
+    .portrait { 
+        width: 60vw;
+        height: 50vh;
+        margin-left: 20vw;
+        margin-right: 0vw;
+        margin-top: 0vh;
+        background-size: 100%;
     }
     
     .about-text {
         grid-area: about-text;
-        margin-top: 20vh;
+        margin-top: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-right: 0;
         text-align: center;
-        padding-right: 20vw;
-        padding-left: 20vw;
+        padding-right: 10vw;
+        padding-left: 10vw;
         margin-left: 0;
     
     }
+
+    .skills2 {
+        grid-area: skills2;
+        margin-top: 5vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 10vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .skills2 img {
+        width: 85vw;
+    }
+
+    .skills1 {
+        display: none;
+    }
+    .skills2 h2 {
+        padding-bottom: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+      .skills2 {
+          display: none;
+      }
   }

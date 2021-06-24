@@ -17,21 +17,6 @@
     }
   }
 
-/* Animation typewriter effect */
-.anim-typewriter{
-  animation: typewriter 3s steps(35) 0.6s 1 normal both,
-             blinkTextCursor 500ms steps(44, end) 10 normal;
-}
-
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-  
-@keyframes blinkTextCursor{
-  from{border-right-color: #5d0092;}
-  to{border-right-color: #fff;}
-}
 
 /*Animation flying*/
 @keyframes fly {

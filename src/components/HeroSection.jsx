@@ -1,10 +1,9 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './HeroSection.css';
 import './Footer.css'
-import { Link } from 'react-router-dom';
 import './Animation.css';
+import { Link } from 'react-router-dom';
 
 function HeroSection() {
   return (
@@ -14,7 +13,7 @@ function HeroSection() {
           <div class='social-icons-navbar'>
             <Link
               class='social-icon-link linkedin'
-              to='/'
+              to={{ pathname: "https://se.linkedin.com/in/tildaengberg" }}
               target='_blank'
               aria-label='LinkedIn'
             >
@@ -22,37 +21,29 @@ function HeroSection() {
             </Link>
             <Link
               class='social-icon-link instagram'
-              to='/'
+              to={{ pathname: "https://instagram.com/tildaengbeerg" }}
               target='_blank'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
             </Link>
+
+            <Link
+              class='social-icon-link github'
+              to={{ pathname: "https://github.com/tildaengberg" }}
+              target='_blank'
+              aria-label='Github'
+            >
+              <i class='fab fa-github' />
+            </Link>
           </div>
         </div>
       </section>
-      <div className="line-1 anim-typewriter">
-        <h1>Hey, I'm Tilda.</h1>
+      <div>
+        <h1>Hi, I'm Tilda.</h1>
       </div>
       
-      <p>Student | UI/UX Designer | Developer</p>
-      <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          Contact me
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          My work
-        </Button>
-      </div>
+      <p>M.Sc. student Interaction Technology and Design</p>
     </div>
   );
 }

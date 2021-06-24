@@ -3,6 +3,7 @@ import './About.css'
 import "animate.css/animate.min.css";
 import { Link } from 'react-router-dom';
 import './Animation.css'
+import ButtonMailto from './ButtonMailTo';
 
 
 function About() { 
@@ -13,23 +14,48 @@ function About() {
             <div className='grid-container'>
 
                 <div className='portrait'>
-                    <img src='image/portrait.png'></img>
                 </div>
 
                 <div className='about-text'>
-                    <h2>About me.</h2>
-                    <p>I'm a student currently at Umeå University in Interaction and Design Technology.
-                    Right now I'm in my second year at the program and still learning a lot of things.
+                    <h2>About me</h2>
+                    <p>I'm a student currently at Umeå University in Interaction and Design Technology. Right now I'm in my third year at the program and still learning a lot of things. I like both UX / UI design but lately I have gained interest in web development.
                     </p>
-                    <div class='email-containter'>
+                    <p>In my free time I like being outdoors and I also have a great interest in sports and exercise.
+                    </p>
+                    <div class='email-containter' id='padding-top'>
                         <i class="far fa-paper-plane"></i>
+                        <ButtonMailto label="tildaengberg@hotmail.com" mailto="mailto:tildaengberg@hotmail.com" />
+                    </div>
+                    <div class='email-containter'>
+                        <i class="fab fa-github"></i>
                         <Link 
-                        to='/'
+                        to={{ pathname: "https://github.com/tildaengberg" }}
                         class='email-link'
+                        target='_blank'
+                        aria-label='GitHub'
                         >
-                            tildaengberg@hotmail.com
+                            GitHub
                         </Link>
                     </div>
+                    <div class='email-containter'>
+                        <i class="fab fa-linkedin-in"></i>
+                        <Link 
+                        to={{ pathname: "https://se.linkedin.com/in/tildaengberg" }}
+                        class='email-link'
+                        target='_blank'
+                        aria-label='LinkedIn'
+                        >
+                            LinkedIn
+                        </Link>
+                    </div>
+                </div>
+                <div className='skills1'>
+                <h2>My skills</h2>
+                <img src='/image/test.png' alt='logo'/>
+                </div>
+                <div className='skills2'>
+                <h2>My skills</h2>
+                <img src='/image/skills2.png' alt='logo'/>
                 </div>
             </div>
                 
