@@ -26,7 +26,7 @@ h2 {
 }
 
 .work-container-grid {
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
     display: grid;
     margin-left: 10vw;
     margin-right: 10vw;
@@ -105,9 +105,10 @@ img {
     }
 
     .work1-txt, .work2-txt, .work3-txt, .work4-txt, .work5-txt    {
-        margin-right: none;
-        margin-left: none;
+        margin-right: 0;
+        margin-left: 0;
         margin-bottom: 10vh;
+        width: 80vw;
     }
 
     img {

@@ -1,6 +1,6 @@
 .hero-container {
   background: url('/src/image/2675337.png') center center/cover no-repeat;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+  background-attachment: fixed;
 }
 
 .social-icons-navbar {

@@ -43,7 +43,7 @@ function HeroSection() {
         <h1>Hi, I'm Tilda.</h1>
       </div>
       
-      <p>M.Sc. student Interaction Technology and Design</p>
+      <p>MSc student Interaction Technology and Design</p>
     </div>
   );
 }
