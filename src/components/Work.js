@@ -39,7 +39,7 @@ function Work() {
                 <div className='work3-txt'>
                     <h2>NASA Global Hackathon 2020</h2>
                     <h4>Global awarded</h4>
-                    <p>In collaboration with NASA, ESA, CSA, CNES and JAXA where 26,000 participants participated in 251 locations around the world. Different teams were formed that chose a challenge to solve during the weekend.</p>
+                    <p>In collaboration with NASA, ESA, CSA, CNES and JAXA where 26,000 participants participated in 251 locations around the world.</p>
                     <p>I worked together with three people from Sweden and Finland. The purpose of the challenge was primarily to design an interactive application that shows and investigates the difficulties of communication between Mars and Earth. It resulted in that we went from being locally nominated in Vaasa to being globally nominated. </p>
                     <p>Link to GitHub: <a href="https://github.com/DavidRonnqvist/Yes-we-hear-you">Yes-we-hear-you</a></p>
                     <p id='highlight'><i class="fas fa-tools"></i>HTML | CSS | GitHub | Adobe XD</p>

@@ -20,14 +20,14 @@ function About() {
                     <h2>About me</h2>
                     <p>I'm a student currently at Umeå University in Interaction and Design Technology. Right now I'm in my third year at the program and still learning a lot of things. I like both UX / UI design but lately I have gained interest in web development.
                     </p>
-                    <p>In my free time I like being outdoors and I also have a great interest in sports and exercise.
+                    <p id='padding-bottom'>In my free time I like being outdoors and I also have a great interest in sports and exercise.
                     </p>
-                    <div class='email-containter' id='padding-top'>
+                    <div class='email-containter' id='color'>
                         <i class="far fa-paper-plane"></i>
                         <ButtonMailto label="tildaengberg@hotmail.com" mailto="mailto:tildaengberg@hotmail.com" />
                     </div>
                     <div class='email-containter'>
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github" id='color'></i>
                         <Link 
                         to={{ pathname: "https://github.com/tildaengberg" }}
                         class='email-link'
@@ -38,7 +38,7 @@ function About() {
                         </Link>
                     </div>
                     <div class='email-containter'>
-                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-linkedin-in" id='color'></i>
                         <Link 
                         to={{ pathname: "https://se.linkedin.com/in/tildaengberg" }}
                         class='email-link'

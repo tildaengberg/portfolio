@@ -26,6 +26,7 @@ h2 {
 }
 
 .work-container-grid {
+    padding-bottom: 10vh;
     display: grid;
     margin-left: 10vw;
     margin-right: 10vw;

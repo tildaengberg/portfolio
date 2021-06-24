@@ -2,8 +2,16 @@ p{
     padding-top: 1rem;
 }
 
-#padding-top {
-    padding-top: 3rem;
+#padding-bottom {
+    padding-bottom: 3rem;
+}
+
+#color {
+    color: #03dac5;
+}
+
+#color:hover {
+    animation: none;
 }
 
 .about-container {
