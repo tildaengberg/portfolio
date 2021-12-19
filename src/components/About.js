@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import './About.css';
 import aboutImg from '../image/ommig.png'
-import { Button } from './Button';
 
 
 function About() {

@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import solarsys from '../image/solarsys.png'
 import solarsys1 from '../image/solarsys-laser.png'
 import points from '../image/lagrangepoints.png'
-import certifikat from '../image/Cert_nasa.jpg'
 
 function Projects_Nasa2020() {
     return (
