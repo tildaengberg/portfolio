@@ -1,0 +1,68 @@
+.exp_container {
+    display: grid;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "exp_education"
+        "exp_work";
+}
+
+.exp_container p, .exp_container h2, .exp_container h3 {
+    padding-right: 20vw;
+}
+
+.exp_container h2 {
+    padding-top: 5vh;
+}
+
+.exp_container h3 {
+    padding-top: 2rem;
+}
+
+.exp_container p {
+    padding-top: 1rem;
+}
+
+.exp_education {
+    grid-area: exp_education;
+}
+
+.exp_work {
+    grid-area: exp_work;
+    padding-bottom: 7vh;
+    padding-top: 5vh;
+}
+
+.border-round {
+    margin-top: 1rem;
+    padding: 8px;
+    border-radius: 51px;
+    border: 1px solid #00CB93;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .exp_container {
+        display: grid;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "exp_education"
+            "exp_work";
+    }
+
+    .exp_container p, .exp_container h2, .exp_container h3 {
+        padding-right: 10vw;
+    }
+}

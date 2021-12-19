@@ -1,49 +1,31 @@
 import React from 'react';
-import '../App.css';
-import './HeroSection.css';
-import './Footer.css'
-import './Animation.css';
 import { Link } from 'react-router-dom';
+import '../App.css';
+import { Button } from './Button';
+import './HeroSection.css';
 
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='social-icons-navbar'>
-            <Link
-              class='social-icon-link linkedin'
-              to={{ pathname: "https://se.linkedin.com/in/tildaengberg" }}
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin-in' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to={{ pathname: "https://instagram.com/tildaengbeerg" }}
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
 
-            <Link
-              class='social-icon-link github'
-              to={{ pathname: "https://github.com/tildaengberg" }}
-              target='_blank'
-              aria-label='Github'
-            >
-              <i class='fab fa-github' />
-            </Link>
-          </div>
-        </div>
-      </section>
-      <div>
-        <h1>Hi, I'm Tilda.</h1>
+      <div className='hero-container-text'>
+        <h1>Hej!</h1>
+        <p>Mitt namn är Tilda Engberg och jag studerar till civilingenjör inom Interaktion och Design på Umeå Universitet. </p>
+        <p>Gillar framförallt att skapa webbsidor, från design till utveckling, till publicering. </p>
+        <p> Kolla in mina roliga projekt som jag sparar på denna sida!</p>
+        <Button
+          className='btns'
+          buttonStyle='btn--primary'
+          buttonSize='btn--medium'
+          onClick={console.log('hey')}>
+          Kontakta mig!
+        </Button>
       </div>
-      
-      <p>MSc student Interaction Technology and Design</p>
+
+      <div className='hero-container-img'>
+
+      </div>
+
     </div>
   );
 }

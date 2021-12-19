@@ -1,162 +1,126 @@
-p{
-    padding-top: 1rem;
-}
-
-#padding-bottom {
-    padding-bottom: 3rem;
-}
-
-#color {
-    color: #03dac5;
-}
-
-#color:hover {
-    animation: none;
-}
-
-.about-container {
+.about_container {
     background-color: #121212;
-    line-height: 1.5;
+
 }
 
-.grid-container {
+.about_wrapper {
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-left: 15vw;
+    justify-content: center;
+    justify-items: center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto;
     grid-template-rows: auto;
+    gap: 0px 10vw;
+    grid-auto-flow: row;
     grid-template-areas:
-    "portrait about-text"
-    "skills1 skills1"
+        "about_img about_content";
 }
 
-.portrait {
-    grid-area: portrait;
-    margin-left: 10vw;
-    margin-right: 5vw;
-    margin-top: 20vh;
-    background-image: url(/src/image/IMG_6478.png);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    object-fit: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 50%;
+.about_img {
+    grid-area: about_img;
 }
 
-
-.about-text {
-    grid-area: about-text;
-    margin-top: 20vh;
-    margin-right: 20vw;
-    margin-bottom: 5vh;
-    justify-content: left;
-    align-items: left;
-    color: white;
-
+.about_content i {
+    padding-right: 1rem;
+    color: #00CB93;
 }
 
-.skills1{grid-area: skills1;}
-
-.skills1 {
-    margin-top: 10vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 15vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.about_img img {
+    object-fit: cover;
+    width: 100%;
+    max-height: auto;
+    border-radius: 51px;
 }
 
-.skills1 img {
-    width: 60vw;
+.about_content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "about_txt"
+        "about_btn";
+    grid-area: about_content;
 }
 
-.skills1 h2 {
-    padding-bottom: 3rem;
+.about_txt {
+    grid-area: about_txt;
 }
 
-.email-containter {
-    margin-top: 1rem;
+.about_txt h2, .about_txt p {
+    padding-bottom: 2rem;
 }
 
-.far {
-    padding-right: 5px;
-    padding-top: 5px;
-    color: #00C9FF;
-    color: #03dac5;
-
+.about_btn {
+    grid-area: about_btn;
+    padding-top: 2rem;
 }
 
-.about-text:hover .far {
-    animation: fly .6s ease forwards;
-  }
+@media screen and (max-width: 768px) {
 
-.email-link{
-    color: white;
-}
-
-
-  @media screen and (max-width: 900px) {
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-        "about-text about-text"
-        "portrait portrait"
-        "skills2 skills2"
-    }
-
-    .portrait { 
-        width: 60vw;
-        height: 50vh;
-        margin-left: 20vw;
-        margin-right: 0vw;
-        margin-top: 0vh;
-        background-size: 100%;
-    }
-    
-    .about-text {
-        grid-area: about-text;
-        margin-top: 10vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-right: 0;
-        text-align: center;
-        padding-right: 10vw;
-        padding-left: 10vw;
-        margin-left: 0;
-    
-    }
-
-    .skills2 {
-        grid-area: skills2;
-        margin-top: 5vh;
+    .about_wrapper {
+        width: 80vw;
         margin-left: 10vw;
-        margin-right: 10vw;
-        margin-bottom: 10vh;
-        justify-content: center;
-        align-items: center;
+        margin-left: 10vw;
+        flex-flow: column;
         display: flex;
-        flex-direction: column;
-    }
-    .skills2 img {
-        width: 85vw;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 0px 10vw;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "about_img",
+            "about_content";
     }
 
-    .skills1 {
-        display: none;
+    .about_img img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 30vh;
+        border-radius: 51px;
     }
-    .skills2 h2 {
-        padding-bottom: 3rem;
-    }
-  }
 
-  @media screen and (min-width: 900px) {
-      .skills2 {
-          display: none;
-      }
-  }
+    .about_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "about_txt"
+            "about_btn";
+        grid-area: about_content;
+    }
+
+    .about_txt h2 {
+        padding-top: 1rem;
+    }
+
+    .about_txt h2, .about_txt p {
+        padding-bottom: 2rem;
+    }
+    
+    .about_btn {
+        grid-area: about_btn;
+        padding-top: 2rem;
+    }
+
+    .about_content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "about_txt"
+            "about_btn";
+        grid-area: about_content;
+        margin-bottom: 7vh;
+    }
+
+}

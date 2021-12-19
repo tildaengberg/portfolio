@@ -1,66 +1,32 @@
-import React from 'react'
-import './About.css'
-import "animate.css/animate.min.css";
-import { Link } from 'react-router-dom';
-import './Animation.css'
-import ButtonMailto from './ButtonMailTo';
+import React from 'react';
+import '../App.css';
+import './About.css';
+import aboutImg from '../image/ommig.png'
+import { Button } from './Button';
 
 
-function About() { 
-
-
+function About() {
     return (
-        <div className='about-container'>
-            <div className='grid-container'>
+        <>
+            <div className='about_container'>
+                <div className='about_wrapper'>
+                    <div className='about_img'>
+                        <img src={aboutImg} alt='profile-img'></img>
+                    </div>
+                    <div className='about_content'>
+                        <div className='about_txt'>
+                            <h2>Om mig</h2>
+                            <p>Jag är en 21-årig student som just nu pluggar till civilingenjör inom interaktion och design på Umeå Universitet. Just nu är jag inne på mitt tredje år på programmet och fortsätter lära mig nya saker varje dag. Jag gillar både UX/UI design men jag blir mer och mer intresserad av webbutveckling. På min fritid gillar jag att vara ute i naturen och träningen tar upp en hel del tid i min vardag. </p>
+                            <p><i class="far fa-paper-plane"></i>tildaengberg@hotmail.com</p>
+                            <p><i class="fab fa-linkedin"></i>LinkedIn</p>
+                            <p><i class="fab fa-facebook-messenger"></i>Messenger</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div className='portrait'>
-                </div>
-
-                <div className='about-text'>
-                    <h2>About me</h2>
-                    <p>I'm a student currently at Umeå University in Interaction and Design Technology. Right now I'm in my third year at the program and still learning a lot of things. I like both UX / UI design but lately I have gained interest in web development.
-                    </p>
-                    <p id='padding-bottom'>In my free time I like being outdoors and I also have a great interest in sports and exercise.
-                    </p>
-                    <div class='email-containter' id='color'>
-                        <i class="far fa-paper-plane"></i>
-                        <ButtonMailto label="tildaengberg@hotmail.com" mailto="mailto:tildaengberg@hotmail.com" />
-                    </div>
-                    <div class='email-containter'>
-                        <i class="fab fa-github" id='color'></i>
-                        <Link 
-                        to={{ pathname: "https://github.com/tildaengberg" }}
-                        class='email-link'
-                        target='_blank'
-                        aria-label='GitHub'
-                        >
-                            GitHub
-                        </Link>
-                    </div>
-                    <div class='email-containter'>
-                        <i class="fab fa-linkedin-in" id='color'></i>
-                        <Link 
-                        to={{ pathname: "https://se.linkedin.com/in/tildaengberg" }}
-                        class='email-link'
-                        target='_blank'
-                        aria-label='LinkedIn'
-                        >
-                            LinkedIn
-                        </Link>
-                    </div>
-                </div>
-                <div className='skills1'>
-                <h2>My skills</h2>
-                <img src='/image/test.png' alt='logo'/>
-                </div>
-                <div className='skills2'>
-                <h2>My skills</h2>
-                <img src='/image/skills2.png' alt='logo'/>
-                </div>
             </div>
-                
-            </div>
-    )
+        </>
+    );
 }
 
-export default About
+export default About;

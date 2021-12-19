@@ -1,17 +1,18 @@
 import React from 'react';
 import '../../App.css';
 import HeroSection from '../HeroSection';
-import Footer from '../Footer';
+import Cards from '../Cards';
 import About from '../About';
-import Work from '../Work';
+import Skills from '../Skills';
 
 function Home() {
   return (
     <>
     <HeroSection />
+    <Skills/>
+    <Cards/>
     <About/>
-    <Work/>
-    <Footer/>
+
     </>
   );
 }
