@@ -61,6 +61,10 @@
     padding-top: 2rem;
 }
 
+.spacing {
+    padding-top: 2rem;
+}
+
 @media screen and (max-width: 768px) {
 
     .about_section_wrapper {

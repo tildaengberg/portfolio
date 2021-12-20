@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import './About.css';
 import aboutImg from '../image/ommig.png'
+import { Link } from 'react-router-dom';
 
 
 function About() {
@@ -16,9 +17,17 @@ function About() {
                         <div className='about_txt'>
                             <h2>Om mig</h2>
                             <p>Jag är en 21-årig student som just nu pluggar till civilingenjör inom interaktion och design på Umeå Universitet. Just nu är jag inne på mitt tredje år på programmet och fortsätter lära mig nya saker varje dag. Jag gillar både UX/UI design men jag blir mer och mer intresserad av webbutveckling. På min fritid gillar jag att vara ute i naturen och träningen tar upp en hel del tid i min vardag. </p>
-                            <p><i class="far fa-paper-plane"></i>tildaengberg@hotmail.com</p>
-                            <p><i class="fab fa-linkedin"></i>LinkedIn</p>
-                            <p><i class="fab fa-facebook-messenger"></i>Messenger</p>
+                            <a href="mailto:tildaengberg@hotmail.com"><i class="far fa-paper-plane"></i>tildaengberg@hotmail.com</a>
+                            <br></br>
+                            <div className='spacing'>
+                            <Link
+                                to={{ pathname: "https://se.linkedin.com/in/tildaengberg" }}
+                                target='_blank'
+                                aria-label='LinkedIn'>
+                                <i class="fab fa-linkedin"></i>
+                                LinkedIn
+                            </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
