@@ -7,7 +7,7 @@ function Experiences() {
             <div className='container'>
                 <div className='exp_container'>
                     <div className='exp_education'>
-                    <hr class='split'></hr>
+                        <hr class='split'></hr>
                         <h2>Utbildning</h2>
                         <h3>Gymnasieexamen Strömbackaskolan Piteå</h3>
                         <p>Jag gick gymnasiet i min hemstad Piteå och valde teknikprogrammet med inriktning mot design. Under dessa år la jag grunden för att skapa och vara kreativ. </p>
@@ -18,9 +18,9 @@ function Experiences() {
                             som passar mig där man får testa på olika områden såsom programmering, webbutveckling och
                             design. De sista två åren får man välja fritt åt vilket håll man vill inrikta sig på och just nu lutar det
                             mot att jag inriktar mig på webbutveckling. </p>
-                            <span className='border-round'><h5>2019 - pågående</h5></span>
+                        <span className='border-round'><h5>2019 - pågående</h5></span>
                     </div>
-                    <div className='exp_work'>
+                    {/*                     <div className='exp_work'>
                     <hr class='split'></hr>
                         <h2>Erfarenheter</h2>
                         <h3>Arbetsmarknadsutskott inom CS-sektionen</h3>
@@ -39,7 +39,7 @@ function Experiences() {
                             var huvudsakligen att bevaka och styra maskiner. Ett otroligt roligt jobb där jag har utvecklat min
                             problemlösningsförmåga och samarbete i grupp. </p>
                             <span className='border-round'><h5>2019 - 2021 | Sommarjobb</h5></span>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

@@ -30,6 +30,7 @@
 
 .exp_education {
     grid-area: exp_education;
+    padding-bottom: 7vh;
 }
 
 .exp_work {

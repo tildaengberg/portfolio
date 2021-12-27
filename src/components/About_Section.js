@@ -16,7 +16,7 @@ function About_Section() {
                     <div className='about_section_content'>
                         <div className='about_section_txt'>
                             <h2>Om mig</h2>
-                            <p>Jag är en 21-årig student som just nu pluggar till civilingenjör inom interaktion och design på Umeå Universitet. Just nu är jag inne på mitt tredje år på programmet och fortsätter lära mig nya saker varje dag. Jag gillar både UX/UI design men jag blir mer och mer intresserad av webbutveckling.</p>
+                            <p>Jag är en 21-årig student från Piteå som just nu pluggar till civilingenjör inom interaktion och design på Umeå Universitet. Just nu är jag inne på mitt tredje år på programmet och fortsätter lära mig nya saker varje dag. Jag gillar både UX/UI design men jag blir mer och mer intresserad av webbutveckling.</p>
                             <p>På min fritid gillar jag att vara ute i naturen och träningen tar upp en hel del tid i min vardag. </p>
                             <a href="mailto:tildaengberg@hotmail.com"><i class="far fa-paper-plane"></i>tildaengberg@hotmail.com</a>
                             <br></br>
