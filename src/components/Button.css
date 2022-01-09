@@ -1,5 +1,5 @@
 :root {
-    --primary: #00CB93;
+    --primary: #8156F9;
 }
 
 .btn {
@@ -41,7 +41,7 @@
 .btn--large:hover,
 .btn--medium:hover {
     transition: all 0.3s ease-out;
-    background: #00CB93;
+    background: #8156F9;
     color: white;
     transition: 250ms;
     scale: 1.1;
