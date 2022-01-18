@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../../App.css';
-import Projects_Nasa2020 from '../../Projects_Nasa2020';
+import ProjectsNasa2020 from '../../projects/ProjectsNasa2020';
 
 function Nasa2020() {
   return (
     <>
-        <Projects_Nasa2020/>
+        <ProjectsNasa2020/>
     </>
   );
 }

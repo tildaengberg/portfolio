@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../App.css';
-import Cards_Projects from '../Cards_Projects';
+import CardsProjects from '../CardsProjects';
 
 function Home() {
   return (
     <>
-    <Cards_Projects />
+    <CardsProjects />
     </>
   );
 }

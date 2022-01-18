@@ -77,6 +77,10 @@
     align-items: center;
 }
 
+.project_info p {
+    padding-top: 1rem;
+}
+
 .project_text { 
     grid-area: project_text; 
     align-self: center;

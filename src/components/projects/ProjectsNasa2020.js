@@ -2,11 +2,11 @@ import React from 'react';
 import './Projects.css';
 import ProjectInfo from './ProjectInfo';
 import { Link } from 'react-router-dom';
-import solarsys from '../image/solarsys.png'
-import solarsys1 from '../image/solarsys-laser.png'
-import points from '../image/lagrangepoints.png'
+import solarsys from '../../image/solarsys.png'
+import solarsys1 from '../../image/solarsys-laser.png'
+import points from '../../image/lagrangepoints.png'
 
-function Projects_Nasa2020() {
+function ProjectsNasa2020() {
     return (
         <div className='project'>
             <div className='project_headline'>
@@ -29,6 +29,8 @@ function Projects_Nasa2020() {
                         <span class="brmedium"></span>'
                         tool='Adobe XD | HTML | CSS'
                         src='../image/spaceapps_mockup.jpg'
+                        links="https://2020.spaceappschallenge.org/challenges/connect/can-you-hear-me-now/teams/yes-we-hear-you/project"
+                        linkName='Läs mer om projektet på SpaceApps hemsida'
 
                     />
 
@@ -55,4 +57,4 @@ function Projects_Nasa2020() {
 }
 
 
-export default Projects_Nasa2020;
+export default ProjectsNasa2020;

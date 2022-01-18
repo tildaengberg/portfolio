@@ -2,11 +2,11 @@ import React from 'react';
 import './Projects.css';
 import ProjectInfo from './ProjectInfo';
 import { Link } from 'react-router-dom';
-import nasavy1 from '../image/nasavy1.png'
-import nasavy2 from '../image/nasavy2.png'
-import nasavy3 from '../image/nasavy3.png'
+import nasavy1 from '../../image/nasavy1.png'
+import nasavy2 from '../../image/nasavy2.png'
+import nasavy3 from '../../image/nasavy3.png'
 
-function Projects_Nasa2021() {
+function ProjectsNasa2021() {
     return (
         <div className='project'>
             <div className='project_headline'>
@@ -29,6 +29,8 @@ function Projects_Nasa2021() {
                         <span class="brmedium"></span>'
                         tool='Figma | Swift'
                         src='../image/nasa3.png'
+                        links="https://2021.spaceappschallenge.org/challenges/statements/you-are-my-sunshine/teams/bredvid/project"
+                        linkName='Läs mer om projektet på SpaceApps hemsida'
                     />
 
                     <div className='project_imgs'>
@@ -54,4 +56,4 @@ function Projects_Nasa2021() {
 }
 
 
-export default Projects_Nasa2021;
+export default ProjectsNasa2021;

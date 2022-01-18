@@ -1,12 +1,12 @@
 import React from 'react';
 import '../../App.css';
-import About_Section from '../About_Section';
+import About from '../About';
 import Experiences from '../Experiences';
 
 function About_Page() {
   return (
     <>
-    <About_Section/>
+    <About/>
     <Experiences/>
     </>
   );

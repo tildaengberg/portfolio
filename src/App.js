@@ -12,6 +12,7 @@ import About from './components/pages/About_Page';
 import Footer from './components/Footer';
 import Nasa2020 from './components/pages/Projects/Nasa2020';
 import Labels from './components/pages/Projects/Labels';
+import GradeField from './components/pages/Projects/GradeField';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/projekt/goodtechhack' exact component={GoodTechHack} />
           <Route path='/projekt/nasa2020' exact component={Nasa2020} />
           <Route path='/projekt/etiketter' exact component={Labels} />
+          <Route path='/projekt/gradefield' exact component={GradeField}/>
         </Switch>
         <Footer/>
         </Fragment>

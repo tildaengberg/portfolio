@@ -2,12 +2,12 @@ import React from 'react';
 import './Projects.css';
 import ProjectInfo from './ProjectInfo';
 import { Link } from 'react-router-dom';
-import grouppic from '../image/hack2.png'
-import coetus from '../image/coetus.png'
-import logo from '../image/coetus3.png'
+import grouppic from '../../image/hack2.png'
+import coetus from '../../image/coetus.png'
+import logo from '../../image/coetus3.png'
 
 
-function Projects_GoodTechHack() {
+function ProjectsGoodTechHack() {
     return (
         <div className='project'>
             <div className='project_headline'>
@@ -24,6 +24,9 @@ function Projects_GoodTechHack() {
                         <span class="brmedium"></span> '
                         tool='HTML | CSS | Adobe Premiere | Adobe Illustrator'
                         src='../image/hack_cover.png'
+                        links="https://www.facebook.com/goodtechhack/posts/738446943495664"
+                        linkName='Länk till intervju'
+                        
                     />
 
                     <div className='project_imgs'>
@@ -40,6 +43,7 @@ function Projects_GoodTechHack() {
                         </div>
 
                     </div>
+                    
 
                 </div>
             </div>
@@ -49,4 +53,4 @@ function Projects_GoodTechHack() {
 }
 
 
-export default Projects_GoodTechHack;
+export default ProjectsGoodTechHack;

@@ -26,6 +26,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    white-space: nowrap;
   }
 
   .navbar-logo-color {
@@ -62,8 +63,12 @@
   
   .nav-links:hover {
     transition: all 0.2s ease-out;
-    color: white;
+    color: #8156F9;
     transform: translateY(-2px);
+  }
+
+  .is-active {
+    color: #8156F9;
   }
   
   .fa-bars {

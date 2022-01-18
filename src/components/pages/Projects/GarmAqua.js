@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../../App.css';
-import Projects_GarmAqua from '../../Projects_GarmAqua';
+import ProjectsGarmAqua from '../../projects/ProjectsGarmAqua';
 
 function GarmAqua() {
   return (
     <>
-        <Projects_GarmAqua/>
+        <ProjectsGarmAqua/>
     </>
   );
 }

@@ -2,11 +2,11 @@ import React from 'react';
 import './Projects.css';
 import ProjectInfo from './ProjectInfo';
 import { Link } from 'react-router-dom';
-import label3 from '../image/label3.png'
-import label4 from '../image/label4.png'
-import label5 from '../image/label5.png'
+import label3 from '../../image/label3.png'
+import label4 from '../../image/label4.png'
+import label5 from '../../image/label5.png'
 
-function Projects_Labels() {
+function ProjectsLabels() {
     return (
         <div className='project'>
             <div className='project_headline'>
@@ -54,4 +54,4 @@ function Projects_Labels() {
 }
 
 
-export default Projects_Labels;
+export default ProjectsLabels;

@@ -24,6 +24,10 @@
     grid-area: about_img;
 }
 
+.spacing {
+    padding-top: 1rem;
+}
+
 .about_content i {
     padding-right: 1rem;
     color: #8156F9;

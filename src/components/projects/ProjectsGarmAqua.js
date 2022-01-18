@@ -2,12 +2,12 @@ import React from 'react';
 import './Projects.css';
 import ProjectInfo from './ProjectInfo';
 import { Link } from 'react-router-dom';
-import flyer from '../image/reklamblad2.png'
-import logos from '../image/logos-07.png'
-import mockup from '../image/ga_mockup.png'
+import flyer from '../../image/reklamblad2.png'
+import logos from '../../image/logos-07.png'
+import mockup from '../../image/ga_mockup.png'
 
 
-function Projects_GarmAqua() {
+function ProjectsGarmAqua() {
     return (
         <div className='project'>
             <div className='project_headline'>
@@ -25,6 +25,8 @@ function Projects_GarmAqua() {
                         <span class="brmedium"></span> '
                         tool='Figma | React.js | Netlify | Adobe Illustrator'
                         src='../image/garmportfoio.png'
+                        links="https://garmaqua.com"
+                        linkName='GarmAqua - Hemsida'
                     />
 
 
@@ -51,4 +53,4 @@ function Projects_GarmAqua() {
 }
 
 
-export default Projects_GarmAqua;
+export default ProjectsGarmAqua;

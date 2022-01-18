@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../../App.css';
-import Projects_Labels from '../../Projects_Labels';
+import ProjectsLabels from '../../projects/ProjectsLabels';
 
 function Labels() {
   return (
     <>
-        <Projects_Labels/>
+        <ProjectsLabels/>
     </>
   );
 }
