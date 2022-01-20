@@ -51,7 +51,7 @@
   .cards__item {
     display: flex;
     margin: 0 10vw 0 0;
-    border-radius: 51px;
+    border-radius: 20px;
     background-color: #1D1D1D;
     margin-bottom: 5vw;
   }
@@ -84,7 +84,7 @@
     width: 100%;
     padding-top: 40%;
     overflow: hidden;
-    border-radius: 51px 51px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
   }
 
   
@@ -99,7 +99,7 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-    border-radius: 51px 51px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
   }
   
   

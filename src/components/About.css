@@ -37,7 +37,7 @@
     object-fit: cover;
     width: 100%;
     max-height: auto;
-    border-radius: 51px;
+    border-radius: 20px;
 }
 
 .about_content {
@@ -86,7 +86,7 @@
         object-fit: cover;
         width: 100%;
         max-height: 30vh;
-        border-radius: 51px;
+        border-radius: 20px;
     }
 
     .about_content {

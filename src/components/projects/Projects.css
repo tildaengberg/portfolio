@@ -9,31 +9,9 @@
     margin-bottom: 1em;
 }
 
-.close_btn{
-    position: absolute;
-    z-index: 1;
-    right: 18vw;
-    top: 18vh;
-}
-
-.close_btn i {
-    font-size: 25px;
-    color: white;
-}
-
-.project_headline {
-    padding-top: 5vh;
-    width: 70vw;
-    margin-left: 15vw;
-    margin-left: 15vw;
-}
-
-.project_headline h2 {
-    padding-bottom: 2rem;
-}
-
 .project_container {
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
@@ -43,47 +21,41 @@
 }
 
 .project_wrapper {
-    padding: 5%;
     width: 70vw;
     margin-left: 15vw;
     margin-left: 15vw;
+    margin-top: 10vh;
     justify-content: center;
     justify-items: center;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10vh 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "project_info"
-        "project_imgs";
+        "project_info2";
     grid-area: project_wrapper;
-    background-color: #1D1D1D;
-    border-radius: 51px;
 }
 
+/****************INFO 1****************/
 .project_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 5%;
-    grid-auto-flow: row;
+    gap: 0px 5vw;
+    grid-auto-flow: column;
     grid-template-areas:
         "project_text project_img";
     grid-area: project_info;
-    border-radius: 51px;
-    align-self:flex-start;
-    justify-content: center;  
+}
+
+.project_info p, .project_info2 p, .project_info3 p {padding-top: 1rem;}
+.project_text {
+    grid-area: project_text;
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-
-.project_info p {
-    padding-top: 1rem;
-}
-
-.project_text { 
-    grid-area: project_text; 
-    align-self: center;
 }
 
 .project_info i { 
@@ -95,41 +67,49 @@
     grid-area: project_img;
     overflow: hidden;
     object-fit: contain; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project_img img {
     object-fit: cover;
     width: 100%;
     height: auto;
-    border-radius: 51px;
+    border-radius: 20px;
 }
 
-.project_imgs {
+/****************INFO 2****************/
+.project_info2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 0px 5vw;
-    grid-auto-flow: row;
+    gap: 7vh 10vw;
     grid-template-areas:
-        "project_img1 project_img2 project_img3";
-    grid-area: project_imgs;
-    justify-content: center;  
-    align-items: center;
-    
+    "project_img2 project_img3"
+    "project_text2 project_text3"
+    ;  
+    grid-area: project_info2;
 }
 
-.project_img1 img, .project_img2 img, .project_img3 img {
+.project_text2 {grid-area: project_text2;}
+.project_text3 {grid-area: project_text3;}
+.project_img2 {grid-area: project_img2;}
+.project_img3 {grid-area: project_img3;}
+
+.project_img2, .project_img3 {
+    overflow: hidden;
+    object-fit: contain; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_img2 img, .project_img3 img{
     object-fit: cover;
     width: 100%;
-    max-height: auto;
-    overflow: hidden;
-    align-self: center; 
+    height: auto;
 }
-
-.project_img1 { grid-area: project_img1;}
-.project_img2 { grid-area: project_img2; }
-.project_img3 { grid-area: project_img3; }
-
 
 @media screen and (max-width: 768px) {
 
@@ -138,10 +118,19 @@
         width: 80vw;
         margin-left: 10vw;
         margin-left: 10vw;
-        grid-auto-flow: column;
+        margin-top: 5vh;
+        grid-auto-flow: row;
         height: fit-content;
         grid-template-columns: auto;
         grid-template-rows: auto;
+        gap: 10vh 0px;
+        grid-template-areas:
+        "project_info"
+        "project_info2";
+    }
+
+    h1{
+        font-size: 25px;
     }
 
 
@@ -149,13 +138,12 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        gap: 0px 5%;
+        gap: 0px 0px;
         grid-auto-flow: column;
         grid-template-areas:
         "project_img"
         "project_text";
         grid-area: project_info;
-        border-radius: 51px;
         align-self:none;
         justify-content: none;  
         align-items: none;
@@ -164,12 +152,7 @@
     .project_text { 
         grid-area: project_text; 
         align-self: center;
-        padding: 5%;
-    }
-
-    .close_btn i {
-        font-size: 25px;
-        color: black;
+        padding-top: 5vh;
     }
     
     .project_img {
@@ -183,28 +166,23 @@
         object-fit: cover;
         width: 100%;
         height: auto;
-        border-radius: 51px 51px 0px 0px;
     }
 
-    .project_imgs {
+    .project_info2 {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        gap: 2rem 0px;
-        grid-auto-flow: column;
+        grid-gap: 5vh 0vw;
         grid-template-areas:
-            "project_img1" 
-            "project_img2"
-            "project_img3";
-        grid-area: project_imgs;
-        justify-content: center;  
-        align-items: center;
+        "project_text2"
+        "project_img2"
+        "project_text3"
+        "project_img3"
+        ;  
+        grid-area: project_info2;
     }
 
-    .project_img1 img, .project_img2 img, .project_img3 img {
-        object-fit: cover;
-        width: 40vw;
-        max-height: auto;
-        overflow: hidden;
+    .project_text3 {
+        padding-top: 7vh;
     }
 }
